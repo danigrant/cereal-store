@@ -1,0 +1,204 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.clickable:hover {
+  filter: brightness(90%);
+}
+
+.clickable:active {
+  filter: brightness(80%);
+}
+
+.hide {
+  display: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+.logo-image-frame {
+  border-radius: 150px;
+  background: #F7ECEC;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+  margin-top: 55px;
+  overflow: hidden;
+}
+
+.logo-image-frame img {
+  display: inline;
+  width: 245px;
+  position: relative;
+  top: -1px;
+  left: -35px;
+}
+
+#metamask-message {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background: #ffe6f8;
+  padding: 1em;
+  border: 1px solid #ffb0cb;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.container {
+  position: relative;
+  top: 50px;
+  width: 900px;
+  margin: 0 auto;
+  margin: 0 auto;
+}
+
+.storefront {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.card {
+  text-align: center;
+  flex-grow: 1;
+	width: 275px;
+  min-width: 250px;
+  max-width: 400px;
+	height: 250px;
+  margin-bottom: 30px;
+  position: relative;
+  margin: 10px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  box-shadow: 0 10px 25px 0 rgba(45,49,50,.2);
+
+  transition:0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transform-origin: center;
+  box-shadow: 0 10px 25px 0 rgba(45,49,50,.6);
+  filter: brightness(115%);
+}
+
+.cereal:nth-child(1) .card {
+  background: linear-gradient(180deg, #92CBFF 0%, #2391F6 100%);
+}
+
+.cereal:nth-child(2) .card {
+  background: linear-gradient(180deg, #FFC530 0%, #E4A400 100%);
+}
+
+.cereal:nth-child(3) .card {
+  background: linear-gradient(180deg, #D7B2FD 0%, #9061DE 100%);
+}
+
+.cereal:nth-child(4) .card {
+  background: linear-gradient(180deg, #55EB9A 0%, #3DBA76 100%);
+}
+
+.cereal:nth-child(5) .card {
+  background: linear-gradient(180deg, #FDC1C1 0%, #F27171 100%);
+}
+
+.cereal:nth-child(6) .card {
+  background: linear-gradient(180deg, #92CBFF 0%, #2391F6 100%);
+}
+
+.cereal img {
+  width: 150px;
+  height: 140px;
+  margin-top: 40px;
+}
+
+.nft-name {
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.price {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: #a9a9a9;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 85%;
+  }
+
+  .card {
+    width: 100%;
+    min-width: 190px;
+  }
+  .show {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .welcome-blurb {
+    margin-top: 50px;
+  }
+  .show {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .logo h1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .welcome-blurb {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 80%;
+  }
+
+  .logo-image-frame {
+    margin-top: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+  .logo h1 {
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .section h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .card {
+    width: 120%;
+    position: relative;
+    right: 10%;
+  }
+}
